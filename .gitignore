@@ -1,0 +1,22 @@
+# Python / MkDocs
+.venv/
+venv/
+__pycache__/
+*.pyc
+site/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Secrets (asla commit'leme)
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets/

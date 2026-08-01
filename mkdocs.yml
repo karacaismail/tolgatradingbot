@@ -1,0 +1,106 @@
+site_name: Tolga Trading Bot — Dokümantasyon
+site_description: >-
+  Binance ECA (Event-Condition-Action) trading bot için gereksinim analizi,
+  mimari, strateji, risk, veri, gözlem ve güvenlik dokümantasyonu.
+site_author: karacaismail
+# site_url güncellenecek: https://karacaismail.github.io/tolgatradingbot/
+
+theme:
+  name: material
+  language: tr
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: amber
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Karanlık moda geç
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: amber
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Aydınlık moda geç
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+  icon:
+    repo: fontawesome/brands/github
+
+repo_name: karacaismail/tolgatradingbot
+repo_url: https://github.com/karacaismail/tolgatradingbot
+edit_uri: edit/main/docs/
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.keys
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/karacaismail/tolgatradingbot
+  generator: false
+
+nav:
+  - Ana Sayfa: index.md
+  - Başlangıç:
+      - Alınan Kararlar: baslangic/kararlar.md
+      - Açık Sorular: baslangic/acik-sorular.md
+  - Mimari:
+      - Katmanlı Mimari & Modlar: mimari/genel.md
+      - Binance API Entegrasyonu: mimari/binance-api.md
+      - Framework Seçimi: mimari/framework.md
+  - ECA Kural Motoru:
+      - Anatomi, Akış & Şema: eca/anatomi.md
+      - Örnek Kurallar: eca/ornekler.md
+      - AI Karar Katmanı: eca/ai.md
+  - Strateji:
+      - İndikatörler: strateji/indikatorler.md
+      - Strateji Aileleri & Rejim: strateji/aileler.md
+  - Risk & Backtest:
+      - Risk Yönetimi: risk/yonetim.md
+      - Backtest & Getiri Gerçekliği: risk/backtest.md
+  - Veri Kaynakları: veri/kaynaklar.md
+  - Gözlem & Kontrol:
+      - Loglama & Log Viewer: gozlem/loglama.md
+      - Canlı Monitoring (ECharts): gozlem/monitoring.md
+      - Feedback & Erken Zarar Kesme: gozlem/feedback.md
+  - Güvenlik & Operasyon: guvenlik.md
+  - Yol Haritası: yol-haritasi.md
+  - Claude Skills: skills.md
+  - Kaynakça: kaynakca.md
