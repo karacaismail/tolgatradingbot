@@ -3,7 +3,7 @@ site_description: >-
   Binance ECA (Event-Condition-Action) trading bot için gereksinim analizi,
   mimari, strateji, risk, veri, gözlem ve güvenlik dokümantasyonu.
 site_author: karacaismail
-# site_url güncellenecek: https://karacaismail.github.io/tolgatradingbot/
+site_url: https://karacaismail.github.io/tolgatradingbot/
 
 theme:
   name: material
